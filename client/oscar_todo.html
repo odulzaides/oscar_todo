@@ -1,0 +1,24 @@
+<head>
+    <title>oscar_todo</title>
+</head>
+
+<body>
+</body>
+<!-- App Layout
+  -->
+<template name="app_layout">
+    {{> yield "navbar"}}
+    <div class="container">
+        <div class="row">
+            {{>yield "breadcrumbs"}}
+        
+            <div class="row"> {{> yield "form"}} </div>
+        
+            <div class="row">
+            <div class="col-md-4">
+            {{>yield "main"}}
+            </div>
+            </div>
+        </div>
+    </div>
+</template>
