@@ -1,4 +1,13 @@
-/* CSS declarations go here */
+CSS declarations go here */
 .blue{
 	color:rgb(48,114,172);
 	}
+.list-group-item{
+	width:100%;
+}
+.right{
+	float:right;
+	height:2em;
+	padding:.5em;
+	text-align: center ;
+}
