@@ -3,16 +3,22 @@
     <ul style="list-style:none">
         {{#each todo}} {{> todo_items}} {{/each}}
     </ul>
+    {{>todo_modal}}
 </template>
 <!-- TODO ITEM
  -->
 <template name="todo_items">
-    <li>
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-            <strong>{{name}} </strong> <br><span class="blue"> Created On:</span>  <strong>{{createdOn}} </strong>   <span class="blue"> Due: </span>  <strong>{{due}}</strong>
-                
+    <div class="list-group-primary">
+        <li>
+            <a href="#" class="list-group-item js-list-group-item">
+                <strong>{{name}} </strong>
+                <span class="blue"> Created On:</span> <strong>{{createdOn}} </strong> <span class="blue"> Due: </span> <strong>{{due}}</strong>
+                <button type="button" class="btn btn-primary-sm right js_todo_delete">Delete</button>
             </a>
-        </div>
-    </li>
+
+        </li>
+    </div>
+</template>
+<template name="todo_modal">
+    
 </template>
