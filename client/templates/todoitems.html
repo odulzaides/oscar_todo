@@ -1,0 +1,17 @@
+<template name="todo_items">
+    <div class="container-fluid">
+        <div class="list-group-primary list-item">
+            <li>
+                <a href="#" class="label label-primary js-list-group-item">
+                    <strong>{{name}} </strong>
+                    <span class="blue"> Created On:</span> <strong>{{createdOn}} </strong> <span class="blue"> Due: </span> <strong>{{due}}</strong>
+                    <div class="right">
+                        <label for="done">Completed</label>
+                        <input id="done" type="checkbox">
+                        <button type="button" class="btn btn-primary-sm right js_todo_delete">Delete</button>
+                    </div>
+                </a>
+            </li>
+        </div>
+    </div>
+</template>

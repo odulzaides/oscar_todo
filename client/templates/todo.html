@@ -1,24 +1,15 @@
 <template name="todo_list">
-    <h3>Task List</h3>
+    <a href="#" class="btn glyphicon glyphicon-plus js_make_new_list">  Make a new List</a>
+    <div class="hidden-div" id="hidden-div">
+        <form class="form form-group js_create_list">
+            <input type="text" name="new_list" id="new_list" placeholder="enter new list name">
+            <button type="submit" class="btn btn-primary-sm ">Create List</button>
+        </form>
+    </div>
+    <h3>Task List for  {{user}}</h3>
     <ul style="list-style:none">
         {{#each todo}} {{> todo_items}} {{/each}}
     </ul>
-    {{>todo_modal}}
 </template>
-<!-- TODO ITEM
- -->
-<template name="todo_items">
-    <div class="list-group-primary">
-        <li>
-            <a href="#" class="list-group-item js-list-group-item">
-                <strong>{{name}} </strong>
-                <span class="blue"> Created On:</span> <strong>{{createdOn}} </strong> <span class="blue"> Due: </span> <strong>{{due}}</strong>
-                <button type="button" class="btn btn-primary-sm right js_todo_delete">Delete</button>
-            </a>
 
-        </li>
-    </div>
-</template>
-<template name="todo_modal">
-    
-</template>
+

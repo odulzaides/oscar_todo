@@ -2,12 +2,24 @@ CSS declarations go here */
 .blue{
 	color:rgb(48,114,172);
 	}
-.list-group-item{
+/* .list-group-item{
 	width:100%;
-}
+	padding:1em;
+} */
+
 .right{
-	float:right;
-	height:2em;
+	display:inline;
+	height:100%;
+	line-height: .1em;
 	padding:.5em;
+	margin-left:.2em;
 	text-align: center ;
+	align-items: center;
 }
+.btn{
+	margin:.1em;
+}
+.hidden-div{
+	display:none;
+}
+

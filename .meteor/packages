@@ -23,3 +23,6 @@ standard-minifier-css
 standard-minifier-js
 twbs:bootstrap
 iron:router
+accounts-github
+accounts-facebook
+#accounts-twitter
